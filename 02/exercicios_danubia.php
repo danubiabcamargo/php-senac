@@ -53,11 +53,9 @@
 
 /*  Exercício 6 - Posição da Primeira Ocorrência:
     Crie uma variável contendo uma lista de compras. Use a função strpos() para encontrar a posição da primeira ocorrência do item "leite" na lista de compras e exiba a posição encontrada.*/
-    $compra = "arroz leite acucar farinha achocolatado"; #errado arrumar
+    $compra = "arroz leite acucar farinha achocolatado"; 
     $posicao_compra = strpos ($compra, "leite");
     echo $posicao_compra;
-
-
 
 
 
