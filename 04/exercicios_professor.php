@@ -7,9 +7,9 @@
     Solicite ao usuário que insira sua altura (em metros) e peso (em quilogramas). Calcule o IMC usando a fórmula IMC = peso / (altura * altura). Exiba o resultado e informe se o usuário está abaixo do peso, com peso normal, com sobrepeso ou obeso, com base nos intervalos de IMC padrão.
     */
     $altura = 1.65;
-    $peso = 70;
+    $quilogramas = 70;
 
-    $imc = $peso / ($altura * $altura);
+    $imc = $quilogramas / ($altura * $altura);
     echo "O cálculo do IMC: " . ($imc) . "<br><br>";
 
 
@@ -33,7 +33,7 @@
     Exercício 3 - Conversor de Temperatura:
     Solicite ao usuário que insira uma temperatura em Celsius (float). Converta essa temperatura para Fahrenheit usando a fórmula: Fahrenheit = (Celsius * 9/5) + 32. Exiba o resultado da conversão.
     */
-    $celsius = 20.0;
+    $celsius = 20.5;
     $conversao = ($celsius * 9/5) + 32;
 
     echo "Conversão: " . $conversao . " ºF" . "<br><br>";
