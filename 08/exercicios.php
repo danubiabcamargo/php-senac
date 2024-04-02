@@ -207,7 +207,6 @@ echo "<br>";
 # Exercício 4: Desenho de Pirâmide
 // Solicita ao usuário a altura de uma pirâmide (número de linhas) e desenha-a na tela usando asteriscos (*) em cada linha.
 
-
 // Implementação de Desenho de Pirâmide
 
 
@@ -243,22 +242,33 @@ echo $palavra == streev($palavra) ? "A palavra $palavra é um palíndromo. <br> 
 
 # Exercício 8: Ordenação de Números
 // Solicita ao usuário três números inteiros e os exibe em ordem crescente.
-
-
+$numero1 = 2;
+$numero2 = 1;
+$numero3 = 7;
 // Implementação de Ordenação de Números
+$numeros = [$numero1,$numero2,$numero3];
+sort($numeros);
 
+echo "Números em ordem crescente: ";
+foreach($numeros as $numero){
+    echo "$numero ";
+}
+
+echo "<br>";
 
 
 
 
 # Exercício 9: Soma de Dígitos
 // Solicita ao usuário um número inteiro positivo e calcula a soma de todos os seus dígitos.
-
-
+$numeroSoma = 599;
 // Implementação de Soma de Dígitos
+$numero_string_array = str_split($numeroSoma);
+$somaDosDigitos = array_sum($numero_string_array);
 
+echo "A soma dos dígitos de $numeroSoma é: $somaDosDigistos. <br>";
 
-
+echo "<br>";
 
 # Exercício 10: Geração de Sequência Numérica
 // Solicita ao usuário um número inteiro N e exibe os primeiros N números da sequência: 1, 3, 6, 10, 15, 21, ...
@@ -266,5 +276,5 @@ echo $palavra == streev($palavra) ? "A palavra $palavra é um palíndromo. <br> 
 
 // Implementação de Geração de Sequência Numérica
 
-
+echo "<br>";
 ?>
