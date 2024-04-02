@@ -1,8 +1,8 @@
 <?php
-//// DESAFIOS LÓGICOS - ESTRUTURAS DE REPETIÇÃO
+# DESAFIOS LÓGICOS - ESTRUTURAS DE REPETIÇÃO
 
 
-// Desafio 1: Contagem Regressiva
+# Desafio 1: Contagem Regressiva
 /*
     Crie um programa que solicite ao usuário um número inteiro positivo N e realize uma contagem regressiva até zero.
     Após cada contagem, exiba a mensagem "Falta X segundos" onde X representa o número de segundos restantes para chegar a zero.
@@ -29,7 +29,8 @@ do {
     $i--;
 } while($i >= 0);
 echo "<br>";
-// Desafio 2: Tabuada
+
+# Desafio 2: Tabuada
 /*
     Crie um programa que exiba a tabuada de multiplicação de um número fornecido pelo usuário.
     A tabuada deve ser exibida de 1 até 10.
@@ -53,7 +54,7 @@ while($i <= 10) {
 }
 echo "<br>";
 
-// Desafio 3: Sequência Fibonacci
+# Desafio 3: Sequência Fibonacci
 /*
     A sequência de Fibonacci é uma sequência de números inteiros em que cada termo é a soma dos dois anteriores.
     Crie um programa que solicite ao usuário um número N e exiba os N primeiros termos da sequência de Fibonacci.
@@ -91,12 +92,11 @@ while ($i < $termos) {
 }
 echo "<br>";
 
-//// DESAFIOS LÓGICOS - ESTRUTURAS DE REPETIÇÃO
+## DESAFIOS LÓGICOS - ESTRUTURAS DE REPETIÇÃO
 
-// Desafio 1: Verificar se a soma de A + B é igual a C
-/*
-    Solicita três números inteiros ao usuário (A, B e C) e verifica se a soma de A e B é igual a C.
-*/
+# Desafio 1: Verificar se a soma de A + B é igual a C
+// Solicita três números inteiros ao usuário (A, B e C) e verifica se a soma de A e B é igual a C.
+
 $A = 5;
 $B = 10;
 $C = 15;
@@ -116,10 +116,10 @@ echo $A + $B == $C ? "A soma de A e B é Igual a C <br>" : "A soma de A e B não
 
 
 # Desafio 2: Calcular o quadrado de um número
-/* Solicita ao usuário um número inteiro e calcula o quadrado desse número. */
+// Solicita ao usuário um número inteiro e calcula o quadrado desse número. 
 $numero = 8;
 
-/* Implementação do Cálculo do Quadrado */
+// Implementação do Cálculo do Quadrado 
 $quadrado = $numero * $numero;
 echo "O quadrado de $numero é $quadrado <br>";
 
@@ -192,7 +192,7 @@ for($i = $numeroN; $i <= $numeroM; $i++){
         echo "$i"; // adiciona o numero a lista dos primos se for um numero primo
     }
 }
-
+echo "<br>";
 
 
 # Exercício 3: Conversão de Horas em Minutos
@@ -215,30 +215,35 @@ for($i = $numeroN; $i <= $numeroM; $i++){
 
 
 
-//// Exercício 6: Contagem de Dígitos em um Número
-/*
-    Solicita ao usuário um número inteiro positivo e conta quantos dígitos esse número possui.
-*/
+# Exercício 6: Contagem de Dígitos em um Número
+// Solicita ao usuário um número inteiro positivo e conta quantos dígitos esse número possui.
+$numeroDigitos = 2048;
 
 // Implementação de Contagem de Dígitos em um Número
+echo "O número de digitos em $numerosDigitos é: " . strlen ($numeroDigitos) . "<br>";
+echo "<br>";
 
 
+# Exercício 7: Verificação de Palíndromo
+// Solicita ao usuário uma palavra e verifica se ela é um palíndromo.
+$palavra = "abbabba";
+$palavraInvertida = strrev($palavra);
 
+if($palavra == $palavraInvertida){
+    echo "A palavra $palavra é um palíndromo. <br>";
+}else{
+    echo "A palavra $palavra não é um palíndromo. <br>";
+}
 
-//// Exercício 7: Verificação de Palíndromo
-/*
-    Solicita ao usuário uma palavra e verifica se ela é um palíndromo.
-*/
+// OU
+echo $palavra == streev($palavra) ? "A palavra $palavra é um palíndromo. <br> " : "A palavra $palavra não é um palíndromo";
 
 // Implementação de Verificação de Palíndromo
 
 
+# Exercício 8: Ordenação de Números
+// Solicita ao usuário três números inteiros e os exibe em ordem crescente.
 
-
-//// Exercício 8: Ordenação de Números
-/*
-    Solicita ao usuário três números inteiros e os exibe em ordem crescente.
-*/
 
 // Implementação de Ordenação de Números
 
@@ -246,20 +251,19 @@ for($i = $numeroN; $i <= $numeroM; $i++){
 
 
 
-//// Exercício 9: Soma de Dígitos
-/*
-    Solicita ao usuário um número inteiro positivo e calcula a soma de todos os seus dígitos.
-*/
+# Exercício 9: Soma de Dígitos
+// Solicita ao usuário um número inteiro positivo e calcula a soma de todos os seus dígitos.
+
 
 // Implementação de Soma de Dígitos
 
 
 
 
-//// Exercício 10: Geração de Sequência Numérica
-/*
-    Solicita ao usuário um número inteiro N e exibe os primeiros N números da sequência: 1, 3, 6, 10, 15, 21, ...
-*/
+# Exercício 10: Geração de Sequência Numérica
+// Solicita ao usuário um número inteiro N e exibe os primeiros N números da sequência: 1, 3, 6, 10, 15, 21, ...
+
+
 // Implementação de Geração de Sequência Numérica
 
 
