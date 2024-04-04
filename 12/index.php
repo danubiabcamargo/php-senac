@@ -45,10 +45,16 @@ abstract class Personagem {
 }
 
 class Guerreiro extends Personagem {
+    public function atacar ($inimigo){
+
+    }
     
 }
 
 class Mago extends Personagem {
+    public function atacar ($inimigo){
+        
+    }
 
 }
 
