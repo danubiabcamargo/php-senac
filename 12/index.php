@@ -23,21 +23,24 @@ abstract class Personagem {
         ($this->vivo? 'Sim' : 'Não') . "<br>";
     }
 
+    abstract public function atacar($inimigo);
+
     public function sofrerDano($danoSofrido) {
         $this->pontosVida -= $danoSofrido;
 
-        if($this->pontosVida <= 0){
+        if($this->pontosVida <= 0) {
             $this->morrer();
         }
     }
 
-    public function recuperarVida() {
-
+    public function recuperarVida($quantidade) {
+        $this->pontosVida += $quantidade;
+        echo "{$this->nome} recuperou $quantidade pontos de vida. <br>";
     }
 
     private function morrer() {
         $this->vivo = false;
-        echo "{$this->nome} morreu! <br>";
+        echo "{$this->nome} morreu. <br>";
     }
 }
 
@@ -45,15 +48,20 @@ class Guerreiro extends Personagem {
     
 }
 
+class Mago extends Personagem {
+
+}
+
 // Não é possível instanciar um objeto a partir de uma classe abstrata
 //$personagem1 = new Personagem();
 
 $guerreiro = new Guerreiro("Aragorn", 100, 20);
+$mago = new Mago("Gandalf", 80, 30);
+
 echo "Dados do Guerreiro: <br>";
 $guerreiro->exibirDados();
 
-$guerreiro->sofrerDano(120);
-echo "Sofreu dano de 120";
-$guerreiro->exibirDados();
+echo "Dados do Mago: <br>";
+$mago->exibirDados();
 
 ?>
